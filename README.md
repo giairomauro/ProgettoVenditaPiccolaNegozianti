@@ -16,5 +16,5 @@ Gestione della vendita dei prodotti dei piccoli negozianti
   + [Documentazione]( "Documentazione")
 * [Domande](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Domande.docx "Domande")
 * [Gantt Preventivo]( "Gantt Preventivo")
-## [Diari](https://github.com/giairomauro/GestioneRipetizioni/tree/master/Diari "Diari")
+## [Diari]( "Diari")
 * [Diario 08.01.2019]( "Diario 08.01.2019")
