@@ -19,4 +19,4 @@ Gestione della vendita dei prodotti dei piccoli negozianti
 ## [Diari](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/ "Diari")
 * [Gennaio](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/Gennaio "Diario Gennaio")
   + [Diario 08.01.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.08.01.pdf "Diario 08.01.2019")
-  + [Diario 09.01.2019] (https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.09.01.pdf "Diario 09.01.2019")
+  + [Diario 09.01.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.09.01.pdf "Diario 09.01.2019")
