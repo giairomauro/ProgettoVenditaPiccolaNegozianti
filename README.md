@@ -21,6 +21,7 @@ Gestione della vendita dei prodotti dei piccoli negozianti
   + [Diario 09.01.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.09.01.pdf "Diario 09.01.2019")
   + [Diario 15.01.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.15.01.pdf "Diario 15.01.2019")
   + [Diario 16.01.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.16.01.pdf "Diario 16.01.2019")
+  + [Diario 22.01.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.22.01.pdf "Diario 22.01.2019")
   
 ## [Documentazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Documentazione "Cartella documentazione")
   * [Immagine Gantt Preventivo](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Documentazione/GanttPreventivo.png "Gantt Preventivo")
