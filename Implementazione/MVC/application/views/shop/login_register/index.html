@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form/Register form</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<!-- JQUERY, FONTAWESOME AND NORMALIZED CSS INSTALLED-->
+<!-- View settings for more info.-->
+<div id="formContainer">
+  <div id="switch">
+    <div class="bar"></div>
+  </div>
+  <form id="login">
+    <div class="formHeader">
+      <h1>Login</h1>
+    </div>
+    <div class="formDiv">
+      <input type="text" placeholder="Username" name="username"/>
+      <div class="inputImage fa fa-user"></div>
+    </div>
+    <div class="formDiv">
+      <input type="password" placeholder="Password" name="password"/>
+      <div class="inputImage fa fa-lock"></div>
+    </div>
+    <div class="formDiv">
+      <label id="remember">
+        <input type="checkbox"/>
+        <div class="checkbox"></div><span>Remember me</span>
+      </label>
+    </div>
+    <div class="formDiv">
+      <input type="submit" value="LOGIN"/>
+    </div>
+    <div class="formFooter"><a class="forgot" href="#">Forgot Password</a></div>
+  </form>
+  <form id="register">
+    <div class="formHeader">
+      <h1>Register</h1>
+    </div>
+    <div class="formDiv">
+      <input type="text" placeholder="Username" name="username"/>
+      <div class="inputImage fa fa-user"></div>
+    </div>
+    <div class="formDiv">
+      <input type="email" placeholder="Email" name="email"/>
+      <div class="inputImage fa fa-envelope"></div>
+    </div>
+    <div class="formDiv">
+      <input type="password" placeholder="Password" name="password"/>
+      <div class="inputImage fa fa-lock"></div>
+    </div>
+    <div class="formDiv">
+      <input type="submit" value="REGISTER"/>
+    </div>
+  </form>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

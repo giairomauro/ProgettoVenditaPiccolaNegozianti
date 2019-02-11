@@ -1,0 +1,38 @@
+.clearfix > input#file-input
+{
+    display: none;
+}
+
+#switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #0315ff;
+    z-index: 2;
+    transition: 0.3s ease;
+}
+#switch .bar {
+    width: 16px;
+    height: 2px;
+    background: #fff;
+}
+#switch .bar:before {
+    content: "";
+    background: #fff;
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    display: flex;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#switch:hover {
+    background: #dc0345;
+}
