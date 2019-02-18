@@ -6,10 +6,6 @@
             <nav class="classy-navbar" id="essenceNav">
                 <!-- Logo -->
                 <a class="nav-brand" href="index.html"><h3>Progetto vendita - gestore</h3></a>
-                <!-- Navbar Toggler -->
-                <div class="classy-navbar-toggler">
-                    <span class="navbarToggler"><span></span><span></span><span></span></span>
-                </div>
             </nav>
 
             <!-- Header Meta Data -->
@@ -22,7 +18,7 @@
                 <div class="user-login-info">
                     <a href="#"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/user.svg" alt=""></a>
                 </div>
-                <!-- Cart Area -->
+                <!-- Logout Area -->
                 <div class="cart-area">
                     <a href="<?php echo URL ?>logout/dealer" id="essenceCartBtn"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/logout.svg" alt=""></a>
                 </div>
@@ -76,15 +72,13 @@
                                 <div class="product-topbar d-flex align-items-center justify-content-between">
                                     <!-- Total Products -->
                                     <div class="total-products">
-                                        <p><span>186</span> prodotti trovati</p>
+                                        <p>prodotti trovati</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row" id="prodContainer">
-
-
 
                         </div>
                     </div>
@@ -93,23 +87,9 @@
                     <div id="switch">
                         <div class="bar"></div>
                     </div>
-
-                    <!-- Pagination -->
-                    <nav aria-label="navigation">
-                        <ul class="pagination mt-50 mb-70">
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#">21</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
-        <script>getCategories();
-                getProducts();</script>
+        <script>getCategories(true);</script>
     </section>
     <!-- ##### Shop Grid Area End ##### -->

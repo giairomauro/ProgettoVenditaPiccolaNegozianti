@@ -15,7 +15,11 @@ jQuery(document).ready(function($){
     });
 });
 
-function linkClick(){
-	$('.cd-popup').addClass('is-visible');
+function linkClickWrongPass(){
+	$('.wrongPass').addClass('is-visible');
+}
+
+function linkClickNoUser(){
+	$('.noUser').addClass('is-visible');
 }
 

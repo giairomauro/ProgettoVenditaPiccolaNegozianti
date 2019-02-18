@@ -43,7 +43,7 @@ create table if not exists negozio(
 nome varchar(50),
 indirizzo varchar(50),
 citta varchar(50),
-telefono varchar(20) not null,
+telefonoclientegestore varchar(20) not null,
 archiviato bit(1) default 0,
 
 primary key(nome, indirizzo, citta),

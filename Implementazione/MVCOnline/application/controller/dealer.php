@@ -2,7 +2,7 @@
 /**
 * 
 */
-class dealer
+class Dealer
 {
 
 	/*
@@ -120,7 +120,6 @@ class dealer
         }
     }
 
-
     /*
         Funzione che richiama il metodo della classe Connection che controlla se le credenziali sono corrette
     */
@@ -155,10 +154,6 @@ class dealer
             header("location: javascript://history.back()");
         }
     }
-
-	function phpAlert($msg) {
-    	echo '<script type="text/javascript">alert("' . $msg . '")</script>';
-	}
 } 
 
 ?>

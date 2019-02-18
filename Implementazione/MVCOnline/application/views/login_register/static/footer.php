@@ -6,10 +6,14 @@
         <?php
             if(isset($_SESSION['wrongPass'])){
                 print "<script type='text/javascript'>
-                            linkClick();
+                            linkClickWrongPass();
                        </script>";
-
                 unset($_SESSION['wrongPass']);
+            }else if(isset($_SESSION['noUser'])){
+                print "<script type='text/javascript'>
+                        linkClickNoUser();
+                   </script>";
+                unset($_SESSION['noUser']);
             }
 
         ?>

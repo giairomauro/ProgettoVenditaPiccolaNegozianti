@@ -18,7 +18,7 @@
                     <label for="file-input">
                         <img id="image" src="<?php echo URL ?>application/img/blankImg.png"/>
                     </label>
-                    <input type="file" id="file-input" name="imageQuestion" onchange="setImage(this)" accept="image/*" required>
+                    <input type="file" id="file-input" name="imageQuestion" onchange="setImage()" accept="image/*" required>
                 </div>
 
                 <!-- Single Product Description -->
@@ -35,10 +35,6 @@
                 <div class="formDiv">
                     <input type="submit" id="insertProduct" value="INSERISCI" disabled/>
                 </div>
-
-                <select name="shop" id="shop" onchange="setShop(this.id)" required>
-                    <option disabled selected>Negozio</option>
-                </select>
             </section>
             <!-- ##### Single Product Details Area End ##### -->
         </form>
@@ -72,6 +68,6 @@
         }
 
         ?>
-    </body>
+        </body>
 
-</html>
+    </html>
