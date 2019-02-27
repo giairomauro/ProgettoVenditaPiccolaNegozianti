@@ -13,7 +13,7 @@ Gestione della vendita dei prodotti dei piccoli negozianti
   + [Quaderno dei compiti](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/1.%20Quaderno%20dei%20Compiti%20Progetti%202018-19%20-%20Gestione%20della%20vendita%20dei%20prodotti%20dei%20piccoli%20negozianti.pdf "Quaderno dei compiti")
   + [griglia di valutazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/2.%20Griglia%20di%20valutazione%20LPI%202018.pdf "Griglia di valutazione")
   + [Criteri di valutazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/A2.%20Criteri%20di%20valutazione%20LPI%20(estesi).pdf "Criteri di valutazione")
-  + [Domande](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/Domande.docx "Domande")
+  + [Annotazioni](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/Annotazioni.docx "Annotazioni")
 
 ## [Diari](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/ "Diari")
 * [Gennaio](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/Gennaio "Diario Gennaio")
@@ -40,8 +40,9 @@ Gestione della vendita dei prodotti dei piccoli negozianti
   + [Diario 27.02.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.27.02.pdf "Diario 27.02.2019")
   
 ## [Documentazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Documentazione "Cartella documentazione")
-  * [Immagine Gantt Preventivo](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Documentazione/GanttPreventivo.png "Gantt Preventivo")
   * [Documentazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Documentazione/Documentazione_I4AC_GestioneVenditaProdottiPiccolinNegozianti_Mauro.doc "Documentazione")
+  * [Immagine Gantt Preventivo](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Documentazione/GanttPreventivo.png "Gantt Preventivo")
+  * [Immagine schema E-R](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Documentazione/SchemaE-R.JPG "Schema E-R")
 
 ## [Progettazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Progettazione/gantt/GanttPreventivo.gan "Cartella progettazione")
 * [Mockup](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Progettazione/gantt/GanttPreventivo.gan "Cartella Mockup")
