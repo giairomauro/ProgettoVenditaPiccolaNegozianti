@@ -6,10 +6,59 @@ class Product
 {
 
     /**
+     * Funzione che prende tutte le categorie
+     */
+    public function getProducts(){
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+            //Prendo la classe model
+            require_once 'application/models/product.php';
+            $product = new ProductModel();
+
+            $products = $product->getProducts();
+
+            //Stampo con json i valori dei coach
+            header('Content-Type: application/json');
+            echo json_encode($products);
+        }else{
+            header("location: javascript://history.back()");
+        }
+    }
+
+    /**
+     * Funzione che prende tutte le categorie
+     */
+    public function getProduct()
+    {
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+            //Prendo la classe model
+            require_once 'application/models/product.php';
+            $product = new ProductModel();
+            $name = isset($_POST["name"]) ? $_POST["name"] : null;
+            $price = isset($_POST["price"]) ? $_POST["price"] : null;
+            $quantity = isset($_POST["quantity"]) ? $_POST["quantity"] : null;
+
+            if ($name != null && $price != null && $quantity != null) {
+
+                $productData = $product->getProduct($name, $price, $quantity);
+            }
+
+                //Stampo con json i valori dei coach
+                header('Content-Type: application/json');
+                echo json_encode($productData);
+        } else {
+            header("location: javascript://history.back()");
+        }
+    }
+
+    /**
      * Funzione che prende tutti i prodotti di un negozio
      */
     public function getDealerProducts(){
-
+        //Se la funzione è richiamata come POST
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             //Prendo la classe model
@@ -21,7 +70,9 @@ class Product
             //Stampo con json i valori dei coach
             header('Content-Type: application/json');
             echo json_encode($products);
+        //Altrimenti
         }else{
+            //Ritorno alla pagina precedente
             header("location: javascript://history.back()");
         }
     }
@@ -30,7 +81,7 @@ class Product
      * Funzione che prende tutti i prodotti di un negozio
      */
     public function getProductsByCategory(){
-
+        //Se la funzione è richiamata come POST
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             //Prendo la classe model
@@ -46,55 +97,41 @@ class Product
                 $categories = $product->getProductsByCategory($category);
             }
 
-            //Stampo con json i valori dei coach
+            //Stampo con json i valori presi
             header('Content-Type: application/json');
             echo json_encode($categories);
+        //Altrimenti
         }else{
+            //Ritorno alla pagina precedente
             header("location: javascript://history.back()");
         }
     }
 
-    /*
-        Funzione che richiama il metodo della classe Connection che controlla se le credenziali sono corrette
-    */
-    public function insertProduct()
-    {
+    /**
+     * Funzione che prende tutti  prodotti adatti alla ricerca e li stampa in JSON
+     */
+    public function searchProducts(){
+        //Se la funzione è richiamata come POST
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             //Prendo la classe model
             require_once 'application/models/product.php';
             $product = new ProductModel();
 
-            // Connssione all'ftp
-            $connFTP = ftp_connect("efof.ftp.infomaniak.com");
-            $login = ftp_login($connFTP, "efof_gestvend", "GestVend_Admin_2018");
-
-            //Prendo le variabili passate dal post.
-            $image = isset($_FILES['imageQuestion'])? $_FILES['imageQuestion'] : null; //Prendo il nome del file
-            $name = $image['name'];
-
-            //Prendo il percorso temporaneo del file e gli cambio nome
-            $tmpName = $image['tmp_name'];
-            $newName = 'application/img/'. $name;
-            rename($tmpName, $newName);
-
-            //Imposto i permessi per il file
-            ftp_chmod($connFTP, 0664, $newName);
-
             //Prendo le variabili passate dal POST
             $category = isset($_POST["category"])? $_POST["category"] : null;
-            $title = isset($_POST["title"])? $_POST["title"] : null;
-            $prize = isset($_POST["prize"])? $_POST["prize"] : null;
-            $quantity = isset($_POST["quantity"])? $_POST["quantity"] : null;
+            $value = isset($_POST["value"])? $_POST["value"] : null;
 
-            //Se entrambi i campi non sono vuoti
-            if ($category != null && $title != null && $prize != null && $quantity != null && $image != null) {
-
-                $var = $product->insertProduct($category, $title, $prize, $quantity, $newName, $newName);
+            if($value != null){
+                $products = $product->searchProducts($category, $value);
             }
 
-            header("location: ". URL ."dealer/details");
+            //Stampo con json i valori presi
+            header('Content-Type: application/json');
+            echo json_encode($products);
+        //Altrimenti
         }else{
+            //Ritorno alla pagina precedente
             header("location: javascript://history.back()");
         }
     }

@@ -15,7 +15,7 @@
                 <div class="formDiv">
                     <input type="submit" value="LOGIN"/>
                 </div>
-                <div class="formFooter">
+                <!--<div class="formFooter">
                     <a class="forgot" href="#">Forgot Password</a>
-                </div>
+                </div>-->
             </form>

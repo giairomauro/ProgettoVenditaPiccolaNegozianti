@@ -30,23 +30,32 @@ class Dealer extends PDO
         //Eseguo la query
         $sql->execute();
 
-        // Ciclo tutti i valori
-        while ($row = $sql->fetch()) {
+        //Se ci sono dei valori
+        if($sql->rowCount() > 0) {
 
-            //Controllo che la password sia corretta
-            if (!(strcmp($pass, $row["password"]))) {
-                // LOGIN VENDITORE
-                $_SESSION['dealer'] = $mail;
-                $checkSession = "dealer";
-                break;
-            } else {
-                // PASSWORD ERRATA
-                $_SESSION['wrongPass'] = "wrongPass";
-                $checkSession = "wrongPass";
+            // Ciclo tutti i valori
+            while ($row = $sql->fetch()) {
+
+                //Controllo che la password sia corretta
+                if (!(strcmp($pass, $row["password"]))) {
+                    // LOGIN VENDITORE
+                    $_SESSION['dealer'] = $mail;
+                    $checkSession = "dealer";
+                    break;
+                } else {
+                    // PASSWORD ERRATA
+                    $_SESSION['wrongPass'] = "wrongPass";
+                    $checkSession = "wrongPass";
+                }
             }
+        //Altrimenti
+        }else{
+            // UTENTE INESISTENTE
+            $_SESSION['noUser'] = "noUser";
+            $checkSession = "noUser";
         }
 
-        //Chiudo la sessione
+                //Chiudo la sessione
         $conn = null;
 
         //Ritorno il valore
@@ -55,6 +64,8 @@ class Dealer extends PDO
                 return $_SESSION['dealer'];
             case "wrongPass":
                 return $_SESSION['wrongPass'];
+            case "noUser":
+                return $_SESSION['noUser'];
             default:
                 return "ERRORE";
         }

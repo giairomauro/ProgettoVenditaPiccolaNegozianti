@@ -7,13 +7,12 @@
 
             <!-- Cart Button -->
             <div class="cart-button">
-                <a href="#" id="rightSideCart"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/bag.svg" alt=""> <span>3</span></a>
+                <a href="#" id="rightSideCart"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/bag.svg" alt=""> <span>1</span></a>
             </div>
 
             <div class="cart-content d-flex">
-
                 <!-- Cart List Area -->
-                <div class="cart-list">
+                <div class="cart-list" id="cart-list">
                     <!-- Single Cart Item -->
                     <div class="single-cart-item">
                         <a href="#" class="product-image">
@@ -99,6 +98,13 @@
                                 </div>
                             </div>
 
+                            <!-- Search Area -->
+                            <div class="search-area">
+                                <form>
+                                    <input type="search" name="search" id="headerSearch" placeholder="Ricerca" onkeyup="searchProduct(this.value)">
+                                    <button type="submit" id="buttonSearch" onclick=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
                             <div class="row" id="prodContainer">
 
                             </div>
@@ -119,5 +125,54 @@
                 </div>
             </div>
         </section>
+
+        <div class="cd-signin-modal js-signin-modal"> <!-- this is the entire modal form, including the background -->
+            <div class="cd-signin-modal__container"> <!-- this is the container wrapper -->
+                <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
+                    <li><a href="#0" data-signin="login" data-type="login">Informazioni prodotto</a></li>
+                </ul>
+
+                <div class="cd-signin-modal__block js-signin-modal-block" data-type="login"> <!-- log in form -->
+                    <form action="<?php echo URL ?>dealer/insertProduct" method="POST" enctype="multipart/form-data">
+                        <!-- ##### Single Product Details Area Start ##### -->
+                        <section class="single_product_details_area d-flex align-items-center sBody">
+
+                            <!-- Single Product Thumb -->
+                            <div class="single_product_thumb clearfix">
+                                <label for="file-input">
+                                    <img id="image" src="<?php echo URL ?>application/img/blankImg.png"/>
+                                </label>
+                                <input type="file" id="file-input" name="imageQuestion" onchange="setImage(this)" accept="image/*" required>
+                            </div>
+
+                            <!-- Single Product Description -->
+                            <div class="single_product_desc clearfix">
+                                <h5>Categoria</h5>
+
+                                <select name="category" id="category" onchange="setCategory(this.id)" required>
+                                    <option disabled selected>Categoria</option>
+                                </select><br><br><br><br>
+                                <input type="text" name="title" id="title" placeholder="Nome" onkeyup="convalidate(this.value, this.id, regLetters)" required><br><br>
+                                <input type="number" name="prize" id="prize" placeholder="Prezzo" min="0" onkeyup="convalidate(this.value, this.id, regNumbers)" required><br><br>
+                                <input type="number" name="quantity" id="quantity" placeholder="Quantità" min="0" onkeyup="convalidate(this.value, this.id, regNumbers)" required>
+                            </div>
+                            <div class="formDiv">
+                                <input type="submit" id="insertProduct" value="INSERISCI" disabled/>
+                            </div>
+
+                            <select name="shop" id="shop" onchange="setShop(this.id)" required>
+                                <option disabled selected>Negozio</option>
+                            </select>
+                        </section>
+                        <!-- ##### Single Product Details Area End ##### -->
+                    </form>
+                </div>
+                <a href="#0" class="cd-signin-modal__close js-close">Close</a>
+            </div> <!-- cd-signin-modal__container -->
+        </div> <!-- cd-signin-modal -->
+
+        <script src="<?php echo URL ?>application/views/shop/js/main.js"></script> <!-- Resource JavaScript -->
+
         <!-- ##### Shop Grid Area End ##### -->
-        <script>getCategories(true);</script>
+        <script>getCategories(true);
+            disableForm();</script>

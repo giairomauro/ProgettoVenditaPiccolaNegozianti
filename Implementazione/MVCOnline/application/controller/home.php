@@ -42,25 +42,4 @@ class Home
             header("location: javascript://history.back()");
         }
     }
-
-    /**
-     * Funzione che prende tutte le categorie
-     */
-    public function getProducts(){
-
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-            //Prendo la classe model
-            require_once 'application/models/product.php';
-            $product = new ProductModel();
-
-            $products = $product->getProducts();
-
-            //Stampo con json i valori dei coach
-            header('Content-Type: application/json');
-            echo json_encode($products);
-        }else{
-            header("location: javascript://history.back()");
-        }
-    }
 }

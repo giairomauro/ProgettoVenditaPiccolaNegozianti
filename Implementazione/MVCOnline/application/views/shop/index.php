@@ -7,7 +7,7 @@
 
             <!-- Cart Button -->
             <div class="cart-button">
-                <a href="#" id="rightSideCart"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/bag.svg" alt=""> <span>3</span></a>
+                <a href="#" id="rightSideCart"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/bag.svg" alt=""> <span>1</span></a>
             </div>
 
             <div class="cart-content d-flex">

@@ -1,12 +1,16 @@
         <script src="<?php echo URL ?>application/views/shop/js/script.js"></script>
 
+        <link rel="stylesheet" href="<?php echo URL ?>application/views/shop/css/reset.css"> <!-- CSS reset -->
+        <link rel="stylesheet" href="<?php echo URL ?>application/views/shop/css/style.css"> <!-- Resource style -->
+        <link rel="stylesheet" href="<?php echo URL ?>application/views/shop/css/demo.css"> <!-- Demo style -->
+
         <!-- ##### Header Area Start ##### -->
         <header class="header_area">
             <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
                 <!-- Classy Menu -->
                 <nav class="classy-navbar" id="essenceNav">
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/logo.png" alt=""></a>
+                    <a class="nav-brand" href="index.html">Vendita</a>
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -31,16 +35,9 @@
                 <!-- Header Meta Data -->
                 <div class="header-meta d-flex clearfix justify-content-end">
 
-                    <!-- Search Area -->
-                    <div class="search-area">
-                        <form action="#" method="post">
-                            <input type="search" name="search" id="headerSearch" placeholder="Type for search">
-                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </form>
-                    </div>
                     <!-- Cart Area -->
                     <div class="cart-area">
-                        <a href="#" id="essenceCartBtn"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/bag.svg" alt=""> <span>3</span></a>
+                        <a href="#" id="essenceCartBtn"><img src="<?php echo URL ?>application/views/_templates/shop/img/core-img/bag.svg" alt=""> <span>1</span></a>
                     </div>
 
                     <?php if(isset($_SESSION['customer'])): ?>

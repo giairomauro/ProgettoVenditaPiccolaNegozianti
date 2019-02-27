@@ -9,7 +9,7 @@
             </div> <!-- cd-popup-container -->
         </div> <!-- cd-popup -->
 
-        <form action="<?php echo URL ?>product/insertProduct" method="POST" enctype="multipart/form-data">
+        <form action="<?php echo URL ?>dealer/insertProduct" method="POST" enctype="multipart/form-data">
             <!-- ##### Single Product Details Area Start ##### -->
             <section class="single_product_details_area d-flex align-items-center sBody">
 

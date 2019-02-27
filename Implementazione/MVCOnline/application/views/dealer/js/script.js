@@ -12,7 +12,7 @@ var checkInput = false;
 $(function() {
 
     $('#switch').click(function() {
-        window.location = 'http://samtinfo.ch/gestionevendita2018/dealer/details';
+        window.location = 'http://samtinfo.ch/gestionevendita2018/dealer/add';
     });
 
 })

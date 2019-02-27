@@ -24,6 +24,10 @@ body {
     body {
       margin-top: 80px; } }
 
+#selectedLink {
+    color: #0315ff;
+}
+
 h1,
 h2,
 h3,
@@ -298,61 +302,62 @@ img {
     .header_area .classynav ul li .megamenu li a:hover,
     .header_area .classynav ul li .dropdown li a:hover {
       color: #000000; }
-  .header_area .search-area form {
+  .search-area form {
     position: relative;
     z-index: 1;
     height: 85px;
     border-left: 1px solid #ebebeb; }
-    @media only screen and (max-width: 767px) {
-      .header_area .search-area form {
-        height: 40px;
-        border-left: none; } }
-    .header_area .search-area form input {
-      border: none;
-      background-color: #ffffff;
-      width: 200px;
-      height: 85px;
-      padding: 0 15px 0 60px;
-      color: #787878;
-      font-size: 14px;
-      font-weight: 500;
-      -webkit-transition-duration: 500ms;
-      transition-duration: 500ms; }
-      @media only screen and (max-width: 767px) {
-        .header_area .search-area form input {
-          width: 170px;
-          height: 40px;
-          padding: 0 10px 0 30px; } }
-      .header_area .search-area form input:focus {
-        outline: none !important;
-        width: 350px; }
-        @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .header_area .search-area form input:focus {
-            width: 300px; } }
-        @media only screen and (max-width: 767px) {
-          .header_area .search-area form input:focus {
-            width: 170px; } }
-        @media only screen and (min-width: 480px) and (max-width: 767px) {
-          .header_area .search-area form input:focus {
-            width: 270px; } }
-        @media only screen and (min-width: 576px) and (max-width: 767px) {
-          .header_area .search-area form input:focus {
-            width: 300px; } }
-    .header_area .search-area form button {
-      position: absolute;
-      z-index: 10;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      left: 30px;
-      background-color: transparent;
-      border: none;
-      color: #787878;
-      font-size: 14px; }
-      @media only screen and (max-width: 767px) {
-        .header_area .search-area form button {
-          left: 10px;
-          height: 40px; } }
+  @media only screen and (max-width: 767px) {
+    .search-area form {
+      height: 40px;
+      border-left: none; } }
+  .search-area form input {
+    border: none;
+    background-color: #ffffff;
+    width: 200px;
+    height: 85px;
+    padding: 0 15px 0 60px;
+    color: #787878;
+    font-size: 14px;
+    font-weight: 500;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  @media only screen and (max-width: 767px) {
+    .search-area form input {
+      width: 170px;
+      height: 40px;
+      padding: 0 10px 0 30px; } }
+  .search-area form input:focus {
+    outline: none !important;
+    width: 350px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .search-area form input:focus {
+      width: 300px; } }
+  @media only screen and (max-width: 767px) {
+    .search-area form input:focus {
+      width: 170px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .search-area form input:focus {
+      width: 270px; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .search-area form input:focus {
+      width: 300px; } }
+  .search-area form button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 30px;
+    background-color: transparent;
+    border: none;
+    color: #787878;
+    font-size: 14px; }
+  @media only screen and (max-width: 767px) {
+    .search-area form button {
+      left: 10px;
+      height: 40px; }
+  }
   .header_area .favourite-area a,
   .header_area .user-login-info a,
   .header_area .cart-area a {
@@ -1751,3 +1756,4 @@ img {
 /* ##### The End ##### */
 
 /*# sourceMappingURL=core-style.css.map */
+

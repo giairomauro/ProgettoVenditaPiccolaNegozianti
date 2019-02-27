@@ -23,7 +23,7 @@ $(function() {
 //Espressioni regolari da controllare
 var regMail = /\S+@\S+\.\S+/i;
 var regLetters = /^[\u00c0-\u017E a-zA-Z\']+$/;
-var regPhone = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
+var regPhone = /^[+]{0,1}[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 
 /**
  * Variabile che controlla che un campo contenga i valori corretti in basse alle espressioni regolari.

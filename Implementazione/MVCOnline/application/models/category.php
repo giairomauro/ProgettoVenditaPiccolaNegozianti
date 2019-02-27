@@ -21,13 +21,18 @@ class Category extends PDO
         //Prendo i dati dell'utente in base alla mail
         $sql = $conn->prepare("SELECT * FROM categoria");
 
-        $dataArray = array();
         //Eseguo la query
         $sql->execute();
 
-        // Ciclo tutti i valori
-        while ($row = $sql->fetch()) {
-            array_push($dataArray, $row);
+        $dataArray = array();
+        //Se ci sono dei valori
+        if($sql->rowCount() > 1) {
+            // Ciclo tutti i valori
+            while ($row = $sql->fetch()) {
+                array_push($dataArray, $row);
+            }
+        }else if($sql->rowCount() == 1) {
+            $dataArray = $sql->fetch();
         }
         $conn = null;
         return $dataArray;

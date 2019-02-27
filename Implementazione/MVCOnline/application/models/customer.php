@@ -1,6 +1,6 @@
 <?php
 
-class Customer
+class Customer extends PDO
 {
     private $connection;
 

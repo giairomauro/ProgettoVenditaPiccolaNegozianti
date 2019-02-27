@@ -36,14 +36,14 @@ class Dealer
     /*
      *	Apertura della pagina dei dettagli
     */
-    public function details()
+    public function add()
     {
 
         //Se la sessione è aperta apro le pagine altrimeenti no
         if(isset($_SESSION['dealer'])) {
             require 'application/views/_templates/header.php';
             require 'application/views/dealer/static/header.php';
-            require 'application/views/dealer/details.php';
+            require 'application/views/dealer/add.php';
         }else{
             $this->index();
         }
@@ -52,105 +52,47 @@ class Dealer
     /*
         Funzione che richiama il metodo della classe Connection che controlla se le credenziali sono corrette
     */
-    public function loginD()
+    public function insertProduct()
     {
+        //Se la funzione è richiamata come POST
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-            //Prendo la classemodel
-            require_once 'application/models/dealer.php';
-            $dealer = new dealer();
+            //Prendo la classe model
+            require_once 'application/models/product.php';
+            $product = new ProductModel();
+
+            // Connssione all'ftp
+            $connFTP = ftp_connect("efof.ftp.infomaniak.com");
+            $login = ftp_login($connFTP, "efof_gestvend", "GestVend_Admin_2018");
 
             //Prendo le variabili passate dal post.
-            $email = isset($_POST["email"])? $_POST["email"] : null;
-            $pass = isset($_POST["pass"])? $_POST["pass"] : null;
-            $pass = hash('sha512', $pass);
+            $image = isset($_FILES['imageQuestion'])? $_FILES['imageQuestion'] : null; //Prendo il nome del file
+            $name = $image['name'];
+
+            //Prendo il percorso temporaneo del file e gli cambio nome
+            $tmpName = $image['tmp_name'];
+            $newName = 'application/img/'. $name;
+            rename($tmpName, $newName);
+
+            //Imposto i permessi per il file
+            ftp_chmod($connFTP, 0664, $newName);
+
+            //Prendo le variabili passate dal POST
+            $category = isset($_POST["category"])? $_POST["category"] : null;
+            $title = isset($_POST["title"])? $_POST["title"] : null;
+            $prize = isset($_POST["prize"])? $_POST["prize"] : null;
+            $quantity = isset($_POST["quantity"])? $_POST["quantity"] : null;
 
             //Se entrambi i campi non sono vuoti
-            if ($email != null && $pass != null) {
+            if ($category != null && $title != null && $prize != null && $quantity != null && $image != null) {
 
-                //controllo il login
-                $var = ($dealer->checkLogin($email, $pass));
-
-                //Se viene ritornata la mail apre la pagina dell'utente
-                if(!strcmp($var, $email)){
-                    header("location: ". URL ."dealer");
-                //Altrimenti torna alla pagina di login
-                }else{
-                    header("location: ". URL ."dealer/home");
-                }
+                $var = $product->insertProduct($category, $title, $prize, $quantity, $newName, $newName);
             }
+
+            header("location: ". URL ."dealer/add");
+            //Altrimenti
         }else{
-            header("location: javascript://history.back()");
-        }
-    }
-
-
-    /*
-        Funzione che richiama il metodo della classe Connection che controlla se le credenziali sono corrette
-    */
-    public function loginC()
-    {
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-            //Prendo la classemodel
-            require_once 'application/models/customer.php';
-            $customer = new Customer();
-
-            //Prendo le variabili passate dal post.
-            $email = isset($_POST["email"])? $_POST["email"] : null;
-            $pass = isset($_POST["pass"])? $_POST["pass"] : null;
-            $pass = hash('sha512', $pass);
-
-            //Se entrambi i campi non sono vuoti
-            if ($email != null && $pass != null) {
-
-                //controllo il login
-                $var = ($customer->checkLogin($email, $pass));
-
-                //Se viene ritornata la mail apre la pagina dell'utente
-                if(!strcmp($var, $email)){
-                    header("location: ". URL);
-                //Altrimenti torna alla pagina di login
-                }else{
-                    header("location: ". URL ."login/index");
-                }
-            }
-        }else{
-            header("location: javascript://history.back()");
-        }
-    }
-
-    /*
-        Funzione che richiama il metodo della classe Connection che controlla se le credenziali sono corrette
-    */
-    public function loginA()
-    {
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-            //Prendo la classemodel
-            require_once 'application/models/dealer.php';
-            $admin = new Admin();
-
-            //Prendo le variabili passate dal post.
-            $email = isset($_POST["email"])? $_POST["email"] : null;
-            $pass = isset($_POST["pass"])? $_POST["pass"] : null;
-            $pass = hash('sha512', $pass);
-
-            //Se entrambi i campi non sono vuoti
-            if ($email != null && $pass != null) {
-
-                //controllo il login
-                $var = ($admin->checkLogin($email, $pass));
-
-                //Se viene ritornata la mail apre la pagina dell'utente
-                if(!strcmp($var, $email)){
-                    header("location: ". URL);
-                    //Altrimenti torna alla pagina di login
-                }else{
-                    header("location: ". URL ."login/index");
-                }
-            }
-        }else{
+            //Ritorno alla pagina precedente
             header("location: javascript://history.back()");
         }
     }

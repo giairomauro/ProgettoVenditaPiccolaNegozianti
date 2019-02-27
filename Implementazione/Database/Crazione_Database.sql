@@ -62,18 +62,34 @@ email varchar(50) not null
 );
 
 create table if not exists compra(
-data date,
+data datetime,
 nome_prodotto varchar(50),
+prezzo_prodotto float,
+quantita_prodotto int,
 email_cliente varchar(50),
 id_luogo_ritiro int,
-data_entrata_merce date,
-data_ritiro date,
-data_ritorno date,
+data_entrata_merce datetime,
+data_ritiro datetime,
+data_ritorno datetime,
 acquistato bit(1) default 0,
 
-foreign key (nome_prodotto) references prodotto(nome),
+foreign key (nome_prodotto, prezzo_prodotto, quantita_prodotto) references prodotto(nome, prezzo, quantita),
 foreign key (email_cliente) references cliente(email),
 foreign key (id_luogo_ritiro) references luogo_ritiro(id),
 
-primary key (data, nome_prodotto, email_cliente)
+primary key (data, nome_prodotto, prezzo_prodotto, quantita_prodotto, email_cliente)
+);
+
+create table if not exists vende(
+nome_prodotto varchar(50),
+prezzo_prodotto float,
+quantita_prodotto int,
+nome_negozio varchar(50),
+indirizzo_negozio varchar(50),
+citta_negozio varchar(50),
+
+foreign key (nome_prodotto, prezzo_prodotto, quantita_prodotto) references prodotto(nome, prezzo, quantita),
+foreign key (nome_negozio, indirizzo_negozio, citta_negozio) references negozio(nome, indirizzo, citta),
+
+primary key (nome_prodotto, prezzo_prodotto, quantita_prodotto, nome_negozio, indirizzo_negozio, citta_negozio)
 );
