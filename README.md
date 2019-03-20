@@ -38,6 +38,9 @@ Gestione della vendita dei prodotti dei piccoli negozianti
   + [Diario 25.02.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Febbraio/I4_diario_progetto2_2019.25.02.pdf "Diario 25.02.2019")
   + [Diario 26.02.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Febbraio/I4_diario_progetto2_2019.26.02.pdf "Diario 26.02.2019")
   + [Diario 27.02.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Febbraio/I4_diario_progetto2_2019.27.02.pdf "Diario 27.02.2019")
+* [Marzo](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/Gennaio "Diario Gennaio")
+  + [Diario 18.03.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.18.03.pdf "Diario 18.03.2019")
+  + [Diario 20.03.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.20.03.pdf "Diario 20.03.2019")
   
 ## [Documentazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Documentazione "Cartella documentazione")
   * [Documentazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Documentazione/Documentazione_I4AC_GestioneVenditaProdottiPiccolinNegozianti_Mauro.doc "Documentazione")
