@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-01-22" view-index="0" gantt-divider-location="484" resource-divider-location="300" version="2.8.5" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-01-08" view-index="0" gantt-divider-location="484" resource-divider-location="300" version="2.8.5" locale="it">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nome" width="242" order="0"/>
@@ -72,7 +72,7 @@
             <task id="44" name="Revisione docente" color="#8cb6ce" meeting="true" start="2019-01-23" duration="0" complete="0" expand="true"/>
         </task>
         <task id="26" name="Test + Doc" meeting="false" start="2019-01-23" duration="20" complete="0" expand="true"/>
-        <task id="33" name="Inserimento online" meeting="false" start="2019-01-28" duration="3" complete="0" expand="true"/>
+        <task id="33" name="Inserimento online" meeting="false" start="2019-02-05" duration="1" complete="4" expand="true"/>
         <task id="27" name="Documentazione" color="#8cb6ce" meeting="false" start="2019-03-26" duration="5" complete="0" expand="true">
             <task id="30" name="Conclusioni" meeting="false" start="2019-03-26" duration="2" complete="0" expand="true"/>
             <task id="31" name="Sviluppi futuri" meeting="false" start="2019-04-01" duration="1" complete="0" expand="true"/>

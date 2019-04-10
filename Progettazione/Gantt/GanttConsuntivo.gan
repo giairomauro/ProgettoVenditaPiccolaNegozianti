@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-01-22" view-index="0" gantt-divider-location="484" resource-divider-location="300" version="2.8.5" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-01-08" view-index="0" gantt-divider-location="465" resource-divider-location="300" version="2.8.10" locale="it">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="242" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="140" order="1"/>
-        <field id="tpd5" name="Data di fine" width="98" order="2"/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="224" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="130" order="1"/>
+        <field id="tpd5" name="Data di fine" width="92" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Nome" width="210" order="0"/>
@@ -47,36 +47,47 @@
             <task id="7" name="Analisi dei requisiti" color="#8cb6ce" meeting="false" start="2019-01-09" duration="3" complete="0" thirdDate="2019-01-09" thirdDate-constraint="0" expand="true"/>
             <task id="8" name="Colloquio con il docente" meeting="false" start="2019-01-15" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="9" name="Progettazione" meeting="false" start="2019-01-15" duration="2" complete="0" expand="true">
+        <task id="9" name="Progettazione" meeting="false" start="2019-01-15" duration="3" complete="0" expand="true">
             <task id="13" name="Mockup pagine" meeting="false" start="2019-01-15" duration="2" complete="0" expand="true"/>
-            <task id="11" name="Diagramma E-R" color="#8cb6ce" meeting="false" start="2019-01-16" duration="1" complete="0" expand="true"/>
+            <task id="11" name="Diagramma E-R" color="#8cb6ce" meeting="false" start="2019-01-16" duration="2" complete="0" expand="true"/>
             <task id="14" name="Fine progettazione" color="#8cb6ce" meeting="true" start="2019-01-16" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="22" name="Implementazione" meeting="false" start="2019-01-22" duration="20" complete="0" expand="true">
+        <task id="22" name="Implementazione" meeting="false" start="2019-01-22" duration="27" complete="0" expand="true">
             <task id="24" name="Creazione database" meeting="false" start="2019-01-22" duration="1" complete="0" expand="true">
                 <depend id="44" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="25" name="Applicativi web" meeting="false" start="2019-01-23" duration="19" complete="0" expand="true">
+            <task id="25" name="Applicativi web" meeting="false" start="2019-01-23" duration="26" complete="0" expand="true">
                 <task id="47" name="Login/registrazione" meeting="false" start="2019-01-23" duration="5" complete="0" expand="true"/>
-                <task id="48" name="Vendita prodotti" meeting="false" start="2019-01-30" duration="3" complete="0" expand="true"/>
-                <task id="79" name="Mostra dei prodotti" meeting="false" start="2019-02-04" duration="3" complete="0" expand="true"/>
-                <task id="139" name="Ricerca prodotti" meeting="false" start="2019-02-11" duration="2" complete="0" expand="true"/>
-                <task id="90" name="Gestione utenti" meeting="false" start="2019-02-13" duration="7" complete="0" expand="true">
-                    <task id="106" name="Carrello" meeting="false" start="2019-02-13" duration="3" complete="0" expand="true"/>
-                    <task id="122" name="Registrato o ospite" meeting="false" start="2019-02-20" duration="2" complete="0" expand="true"/>
-                    <task id="163" name="Ritiro merce" meeting="false" start="2019-02-26" duration="2" complete="0" expand="true"/>
+                <task id="79" name="Mostra dei prodotti" meeting="false" start="2019-02-05" duration="5" complete="0" expand="true"/>
+                <task id="296" name="Pagina venditore" meeting="false" start="2019-02-06" duration="14" complete="0" expand="true">
+                    <task id="297" name="Vendita prodotti" meeting="false" start="2019-02-06" duration="11" complete="0" expand="true"/>
+                    <task id="298" name="Modifica prodotti" meeting="false" start="2019-03-18" duration="4" complete="0" expand="true"/>
                 </task>
-                <task id="200" name="Pagina amministratore" meeting="false" start="2019-02-27" duration="2" complete="0" expand="true"/>
-                <task id="199" name="Stampe" meeting="false" start="2019-03-20" duration="2" complete="0" expand="true"/>
+                <task id="90" name="Gestione utenti" meeting="false" start="2019-02-18" duration="15" complete="0" expand="true">
+                    <task id="106" name="Carrello" meeting="false" start="2019-02-20" duration="13" complete="0" expand="true">
+                        <task id="252" name="Inserimento prodotti" meeting="false" start="2019-02-20" duration="5" complete="0" expand="true"/>
+                        <task id="253" name="Mostra dati" meeting="false" start="2019-02-26" duration="6" complete="0" expand="true"/>
+                        <task id="254" name="check out" meeting="false" start="2019-04-08" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="303" name="Dettagli prodotto" meeting="false" start="2019-03-27" duration="1" complete="0" expand="true"/>
+                    <task id="122" name="Registrato" meeting="false" start="2019-02-18" duration="13" complete="0" expand="true"/>
+                    <task id="163" name="Ritiro merce" meeting="false" start="2019-04-02" duration="2" complete="0" expand="true"/>
+                </task>
+                <task id="235" name="Ricerca prodotti" meeting="false" start="2019-02-19" duration="3" complete="0" expand="true"/>
+                <task id="200" name="Pagina amministratore" meeting="false" start="2019-04-08" duration="2" complete="0" expand="true">
+                    <task id="311" name="Aggiunta e modifica negozi" meeting="false" start="2019-04-08" duration="1" complete="0" expand="true"/>
+                    <task id="345" name="archivia negozio" meeting="false" start="2019-04-09" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="199" name="pdf" color="#8cb6ce" meeting="false" start="2019-04-08" duration="1" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="44" name="Revisione docente" color="#8cb6ce" meeting="true" start="2019-01-23" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="26" name="Test + Doc" meeting="false" start="2019-01-23" duration="20" complete="0" expand="true"/>
-        <task id="33" name="Inserimento online" meeting="false" start="2019-02-05" duration="1" complete="4" expand="true"/>
-        <task id="27" name="Documentazione" color="#8cb6ce" meeting="false" start="2019-03-26" duration="5" complete="0" expand="true">
-            <task id="30" name="Conclusioni" meeting="false" start="2019-03-26" duration="2" complete="0" expand="true"/>
-            <task id="31" name="Sviluppi futuri" meeting="false" start="2019-04-01" duration="1" complete="0" expand="true"/>
-            <task id="32" name="Implementazione" meeting="false" start="2019-04-02" duration="2" complete="0" expand="true"/>
+        <task id="26" name="Test + Doc" meeting="false" start="2019-01-29" duration="21" complete="0" expand="true"/>
+        <task id="33" name="Inserimento online" meeting="false" start="2019-02-05" duration="3" complete="0" expand="true"/>
+        <task id="27" name="Documentazione" color="#8cb6ce" meeting="false" start="2019-01-23" duration="27" complete="0" expand="true">
+            <task id="30" name="Conclusioni" meeting="false" start="2019-04-09" duration="2" complete="0" expand="true"/>
+            <task id="31" name="Sviluppi futuri" meeting="false" start="2019-04-10" duration="1" complete="0" expand="true"/>
+            <task id="32" name="Implementazione" meeting="false" start="2019-01-23" duration="27" complete="0" expand="true"/>
         </task>
         <task id="45" name="Consega progetto" color="#8cb6ce" meeting="true" start="2019-04-10" duration="0" complete="0" expand="true"/>
     </tasks>
