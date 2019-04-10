@@ -11,8 +11,6 @@ Gestione della vendita dei prodotti dei piccoli negozianti
 **Consegna:** 10.04.2019
 * [Informazioni progetto](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Informazioni_progetto "Cartello informazioni progetto")
   + [Quaderno dei compiti](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/1.%20Quaderno%20dei%20Compiti%20Progetti%202018-19%20-%20Gestione%20della%20vendita%20dei%20prodotti%20dei%20piccoli%20negozianti.pdf "Quaderno dei compiti")
-  + [griglia di valutazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/2.%20Griglia%20di%20valutazione%20LPI%202018.pdf "Griglia di valutazione")
-  + [Criteri di valutazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/A2.%20Criteri%20di%20valutazione%20LPI%20(estesi).pdf "Criteri di valutazione")
   + [Annotazioni](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Informazioni_progetto/Annotazioni.docx "Annotazioni")
 
 ## [Diari](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/ "Diari")
@@ -41,6 +39,16 @@ Gestione della vendita dei prodotti dei piccoli negozianti
 * [Marzo](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/Gennaio "Diario Gennaio")
   + [Diario 18.03.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.18.03.pdf "Diario 18.03.2019")
   + [Diario 20.03.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.20.03.pdf "Diario 20.03.2019")
+  + [Diario 25.03.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.25.03.pdf "Diario 25.03.2019")
+  + [Diario 26.03.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.26.03.pdf "Diario 26.03.2019")
+  + [Diario 27.03.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.27.03.pdf "Diario 27.03.2019")
+* [Aprile](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Diari/Aprile "Diario Gennaio")
+  + [Diario 01.04.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.01.04.pdf "Diario 01.04.2019")
+  + [Diario 02.04.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.02.04.pdf "Diario 02.04.2019")
+  + [Diario 03.04.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.03.04.pdf "Diario 03.04.2019")
+  + [Diario 08.04.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.08.04.pdf "Diario 08.04.2019")
+  + [Diario 09.04.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.09.04.pdf "Diario 09.04.2019")
+  + [Diario 10.04.2019](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Diari/Gennaio/I4_diario_progetto2_2019.10.04.pdf "Diario 10.04.2019")
   
 ## [Documentazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/tree/master/Documentazione "Cartella documentazione")
   * [Documentazione](https://github.com/giairomauro/ProgettoVenditaPiccolaNegozianti/blob/master/Documentazione/Documentazione_I4AC_GestioneVenditaProdottiPiccolinNegozianti_Mauro.doc "Documentazione")
